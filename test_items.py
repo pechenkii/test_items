@@ -9,7 +9,6 @@ def is_element_present(browser):
         return True
     except:
         return False 
-time.sleep(5)
 def test_guest_should_see_add_basket_button(browser):
 	browser.get(link) 
 	assert is_element_present(browser)==True, "Button is not found"
